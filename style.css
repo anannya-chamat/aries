@@ -2,7 +2,6 @@
                 
                 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=PT+Sans&family=Poppins:ital,wght@1,200&display=swap');
                 /* body{
-  font-family: 'Poppins', sans-serif;
 } */
                 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
@@ -5076,7 +5075,7 @@
                     flex-direction: row;
                     justify-content: center;
                     align-items: stretch;
-                    height: 100vh;
+                    height: max-content;
                     background-color: #bcbcbc;
                 }
                 /* CSS styles for component care section */
@@ -5101,17 +5100,13 @@
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
-                }
                 
                 .gallery-container a {
                     margin: 10px;
                     display: block;
                     width: 200px;
-                }
-                
-                .gallery-container img {
-                    width: 100%;
-                    height: auto;
+                    margin: 10px auto;                }
+
                 }
                 
                 .user-section {
@@ -5173,3 +5168,63 @@
                     color: #666666;
                     text-decoration: none;
                 }
+
+.gallery-container > a > img{
+    height:320px;
+    width: auto;
+    margin:-30px 0 50px 0;
+}
+
+/* SIGN UP STYLE HERE..................................... */
+
+.container-222 {
+    margin: 0 auto;
+    padding:  20px 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+
+  .container-222 >h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    font-size: larger;
+    display:flex;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin: 0 20px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .form-group button {
+    width: 100%;
+    padding: 8px 18px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .form-group button:hover {
+    background-color: #45a049;
+  }
