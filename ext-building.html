@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ARIES 3.6m DOT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+
+    <!--  -------------- -->
+</head>
+
+<body class="structure-body" style=" width:82%; margin: 0 auto; background-color: black;">
+
+    <div class="top_menu_section">
+        <!--MENU BAR-->
+        <div class="headerSection">
+            <div class="container">
+                <div class="row">
+                    <div class="left-section col-md-9">
+                        <a href="https://www.aries.res.in" target="_blank"><img
+                                src="assets/aries_logo_auto_6_3_1.png"></a>
+                    </div>
+                    <div class="right-section col-md-3">
+                        <a href="https://dst.gov.in" target="_blank"><img src="assets/azadi_ka_logo.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation bar -->
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login/Signup</a></li>
+            <li><a href="system-overview.html">System Overview</a></li>
+            <li><a href="maintenance-schedule.html">Maintenance Schedule</a></li>
+            <li><a href="maintenance-data-entry.html">Maintenance Data Entry</a></li>
+             <li><a href="help-support.html">Help and Support</a></li>
+        </ul>
+
+        <!-------------------------------------BODY HERE ----------------------------------------->
+        <div class="signup-content">
+
+            <div class="table-container">
+                <table id="data-table">
+            <thead>
+                <tr>
+                    <!-- Add more headers if needed -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be dynamically generated here -->
+            </tbody>
+        </table>
+            </div>
+        </div>
+        <!-- ----FOOTER---- -->
+
+        <footer id="footer" class="footer">
+            <div class="footer-content">
+                <div class="footer-inner">
+                    <div class="footer-top">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="before-footer clearfix area">
+                                        <div>
+                                            <div id="block-footeraddress" class="block block-block-content block-block-content286b23e4-6c26-4d34-a090-a607de615c9a no-title">
+                                                <div class="content block-content">
+                                                    <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
+                                                        <p class="text-align-center">
+                                                            Aryabhatta Research Institute of Observational Sciences (ARIES)<br/> (An Autonomous Institute under the Department of Science &amp;Technology, Govt. of India)<br/> Manora Peak, Nainital-263001,
+                                                            Uttarakhand, India<br/>
+                                                            <strong>Phone:</strong> +91-5942-270700 (Reception)  <strong>Fax:</strong> +91-5942-233439
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer-top -->
+                </div>
+            </div>
+            <!-- footer -->
+        </footer>
+</body>
+<script>fetch('3.6mDOTComponents.csv')
+    .then(response => response.text())
+    .then(data => {
+      const tableBody = document.querySelector('tbody');
+      const rows = data.split('\n');
+  
+      rows.forEach((row) => {
+        const columns = row.split(',');
+  
+        const newRow = document.createElement('tr');
+  
+        columns.forEach(column => {
+          const newColumn = document.createElement('td');
+          newColumn.textContent = column;
+          newRow.appendChild(newColumn);
+        });
+  
+        tableBody.appendChild(newRow);
+      });
+    });
+  </script>
+</html>
+
+
