@@ -1441,13 +1441,13 @@ input[type="submit"]:hover{
   background-color: #007bff;
 }
 
-h1 {
+h1, h2 {
   position: relative;
   display: inline-block;
   margin-bottom: 40px;
 }
 
-h1::after {
+h1::after, h2::after {
   content: '';
   position: absolute;
   bottom: -3px; /* Adjust the distance of the underline from the text */
@@ -1458,16 +1458,13 @@ h1::after {
   transition: width 0.3s ease-in-out; /* Adjust the transition duration and timing function as desired */
 }
 
-h1:hover::after {
+h1:hover::after , h2:hover::after {
   width: 0; /* Shrinks the underline to zero width on hover */
 }
 
 /* profile */
 
 
-body {
-  font-family: Arial, sans-serif;
-}
 .profile-card {
   display: flex;
   align-items: flex-start;
@@ -1495,6 +1492,7 @@ body {
   margin: 10px;
   box-shadow: 0 4px 8px rgba(80, 80, 80, 0.9);
 }
+
 .svg-icon {
   width: 16px;
   height: 16px;
