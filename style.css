@@ -1461,3 +1461,57 @@ h1::after {
 h1:hover::after {
   width: 0; /* Shrinks the underline to zero width on hover */
 }
+
+/* profile */
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+.profile-card {
+  display: flex;
+  align-items: flex-start;
+  margin:30px;
+  padding:30px;
+  border: 2px solid lightgray;
+  max-width:500px;
+  align-items: center;
+  justify-content: center;
+}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.profile-info p {
+  margin: 5px 0;
+}
+
+.profile-image {
+  margin-left: 60px;
+}
+.profile-image > img{
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(80, 80, 80, 0.9);
+}
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  fill: #444;
+  margin-right: 5px;
+}
+
+.profile-info p {
+  display: flex;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  margin-right: 5px; 
+}
+
+.profile-image {
+  display: flex;
+  align-items: center;
+}
