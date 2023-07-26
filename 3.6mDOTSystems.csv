@@ -1,4 +1,4 @@
-Sr_no,Floor,Systems,Unit_Name,Components ,Life_Cycle_in_use (in years),General Life Cycle (in years),Installation_Year,Last_Replaced (Year),Replacement Due,Replacement Frequency ,Criticality Rating(Out of 10),Failure Mode
+Sr_no,Floor,Systems,Unit_Name,Components ,Life_Cycle_in_use (in years),General_Life_Cycle,Installation_Year,Last_Replaced (Year),Replacement_Due,Replacement_Frequency ,Criticality_Rating,Failure_Mode
 1,Ground Floor,Pneumatic System,ARIES Compressor ,conveyor belt,3,3,2016,1/1/2016,2019,1,4,"Belt misalignment, excessive wear, belt breakage"
 2,Ground Floor,Pneumatic System,ARIES Compressor ,Pistons and Piston Rings,2,5 to 10,2016,10/7/2023,2025,1,8,"Cylinder scoring, piston ring wear
 "
